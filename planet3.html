@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatooine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    onclick="playAudio()"
+    style="
+      background-image: url(images/Tatooine.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    "
+  >
+    <div class="container5">
+      <h1>Tatooine</h1>
+      <p>
+        Tatooine is a desert planet located in the Outer Rim Territories,
+        recognized for its twin suns and arid climate. The planet's ecosystems
+        are characterized by vast desert landscapes with limited vegetation,
+        primarily consisting of moisture farming crops and hardy scrub
+        vegetation. Wildlife on Tatooine includes unique creatures like Banthas
+        and the nomadic Tusken Raiders. Covering approximately 104,000 square
+        kilometers, Tatooine has a circumference of about 22,000 kilometers and
+        a population of around 2 million, primarily made up of humans, Jawas,
+        and various alien species. The planet is famous for its bustling
+        spaceports, such as Mos Eisley, and serves as the home world of key
+        characters like Anakin and Luke Skywalker.
+      </p>
+      <strong><a href="index.html">Back</a></strong>
+    </div>
+    <audio id="bgAudio" loop>
+      <source src="audio/The Force.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("bgAudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>

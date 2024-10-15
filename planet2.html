@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustafar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    onclick="playAudio()"
+    style="
+      background-image: url(images/mustafar.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    "
+  >
+    <div class="container3">
+      <h1>Mustafar</h1>
+      <p>
+        Mustafar is a volcanic planet in the Outer Rim, known for its fiery
+        landscape and harsh climate. The planet's ecosystems are largely
+        dominated by volcanic activity, featuring lava rivers, volcanic vents,
+        and rugged terrains that support only the hardiest life forms. Its area
+        is estimated to be around 20,000 square kilometers, with a circumference
+        of approximately 8,000 kilometers. The population on Mustafar is sparse,
+        primarily consisting of miners and individuals who exploit its valuable
+        resources. It is infamous for being the location of the duel between
+        Anakin Skywalker and Obi-Wan Kenobi, as well as for its role in the
+        creation of the Galactic Empire.
+      </p>
+      <p>
+        <strong><a href="index.html">Back</a></strong>
+      </p>
+    </div>
+    <audio id="bgAudio" loop>
+      <source src="audio/Duel of the Fates.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("bgAudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>

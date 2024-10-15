@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onclick="playAudio()">
+    <audio id="bgAudio" loop>
+      <source src="audio/starwars.mp3" type="audio/mpeg" />
+    </audio>
+    <video autoplay muted loop id="bgVideo" playsinline>
+      <source src="video/space.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <h1>Star Wars</h1>
+      <h2>Planets in the world of Star Wars</h2>
+      <ol class="planets">
+        <li class="hover-box glow-yellow">
+          <a href="planet1.html">Coruscant</a>
+        </li>
+        <li class="hover-box glow-red"><a href="planet2.html">Mustafar</a></li>
+        <li class="hover-box glow-green">
+          <a href="planet3.html">Tatooine</a>
+        </li>
+        <li class="hover-box glow-blue"><a href="planet4.html">Kamino</a></li>
+        <li class="hover-box glow-silver"><a href="moon.html">The Moon?</a></li>
+      </ol>
+    </div>
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("bgAudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>

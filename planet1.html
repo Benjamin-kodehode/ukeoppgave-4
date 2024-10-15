@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coruscant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(images/coruscant.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    "
+    onclick="playAudio()"
+  >
+    <div class="container2">
+      <h1>Coruscant</h1>
+      <p>
+        Coruscant is a vibrant, city-covered planet located in the Core Worlds
+        of the Star Wars galaxy. Its entire surface is urbanized, dominated by
+        towering skyscrapers and extensive infrastructure, making it one of the
+        most densely populated places in the galaxy. Due to its urban
+        environment, natural ecosystems are virtually nonexistent; however,
+        artificial parks and biodomes are created to mimic natural habitats.
+        Coruscant's circumference is estimated to be around 24,000 kilometers,
+        and it is home to trillions of inhabitants from various species, serving
+        as the political hub of the galaxy where the Galactic Senate and Jedi
+        Temple are located.
+      </p>
+      <p>
+        <strong><a href="index.html">Back</a></strong>
+      </p>
+    </div>
+    <audio id="bgAudio" loop>
+      <source src="audio/Imperial March.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("bgAudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>

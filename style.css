@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  outline: none;
+}
+
+body {
+  padding: 20px;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  margin: 20px;
+  color: white;
+  text-shadow: 3px;
+  width: 30%;
+}
+.container2 {
+  text-align: left;
+  margin: 20px;
+  text-shadow: 3px;
+  width: 35%;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  padding: 10px;
+}
+.container3 {
+  text-align: left;
+  margin: 20px;
+  text-shadow: 3px;
+  width: 35%;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 10px;
+  padding: 10px;
+}
+.container4 {
+  text-align: left;
+  margin: 20px;
+  text-shadow: 3px;
+  width: 35%;
+  color: blue;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container5 {
+  text-align: left;
+  margin: 20px;
+  text-shadow: 3px;
+  width: 35%;
+  color: green;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  padding: 10px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.planets li {
+  font-size: 18px;
+  margin-bottom: 5px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  display: list-item;
+}
+.hover-box {
+  display: inline-block;
+  transition: box-shadow 0.3s ease;
+}
+.planets {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+  width: 35%;
+}
+.planets a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.glow-yellow:hover {
+  box-shadow: 0 0 15px yellow;
+  background-color: yellow;
+  opacity: 75%;
+}
+.glow-red:hover {
+  box-shadow: 0 0 15px red;
+  background-color: red;
+  opacity: 75%;
+}
+
+.glow-green:hover {
+  box-shadow: 0 0 15px green;
+  background-color: green;
+  opacity: 75%;
+}
+.glow-blue:hover {
+  box-shadow: 0 0 15px blue;
+  background-color: blue;
+  opacity: 75%;
+}
+.glow-silver:hover {
+  box-shadow: 0 0 15px silver;
+  background-color: silver;
+  opacity: 75%;
+}
+.moonstar {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.moon {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+  background-image: url("images/moon.jpg");
+}
+.moonstar:hover .moon {
+  background-image: url("images/nomoon.webp");
+}
+.håkonisthebestmaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 400px;
+}
+.håkonbeatscthulueasy {
+  color: silver;
+  display: none;
+  margin-top: 20px;
+}
+.moonstar:hover ~ .håkonbeatscthulueasy {
+  display: block;
+}
+@keyframes slideup {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: -150px;
+    left: 0%;
+  }
+}
+#figmaballs {
+  position: absolute;
+  left: 0%;
+  bottom: -150px;
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+  animation: slideup 8s;
+}

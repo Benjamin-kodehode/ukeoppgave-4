@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    onclick="playAudio()"
+    style="
+      background-image: url(images/Kamino.jpg);
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    "
+  >
+    <div class="container4">
+      <h1>Kamino</h1>
+      <p>
+        Kamino is an ocean-covered planet located in the Outer Rim, known for
+        its advanced cloning facilities. The planet's ecosystems primarily
+        consist of vast oceans and stormy weather, with very little landmass
+        available. Its area is estimated to be around 30,000 square kilometers,
+        with a circumference of approximately 10,000 kilometers. The population
+        of Kamino is small, around 1 million, mainly consisting of Kaminoans who
+        are skilled in cloning technology. Kamino is most famous for housing the
+        cloning facilities that produced the Grand Army of the Republic during
+        the Clone Wars.
+      </p>
+      <strong><a href="index.html">Back</a></strong>
+    </div>
+    <audio id="bgAudio" loop>
+      <source src="audio/Never.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("bgAudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>
